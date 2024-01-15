@@ -8,14 +8,20 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+}
+
 a {
   color: black;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(251, 249, 249);
+  background-color: rgb(245, 245, 245);
   height: 1000px;
+  padding-top: 4.5rem;
 }
 
 header .navbar {
@@ -23,6 +29,20 @@ header .navbar {
   justify-content: center;
   border-bottom: 2px solid #eeeeee;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header .navbar nav .logo span {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+header .navbar nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 header .navbar nav {
@@ -67,18 +87,105 @@ header .header-text-wrap .header-text a button {
   font-size: small;
   font-weight: 600;
   background-color: aliceblue;
-  border: 2px solid #eeeeee;
+  border: 0;
   padding: 0.7rem 1.7rem;
   border-radius: 10rem;
   cursor: pointer;
 }
 
+header .header-text-wrap .header-text a button:hover {
+  background-color: rgb(221, 228, 234);
+  transition-duration: 0.5s;
+}
+
+header .header-text-wrap .header-text a button:not(:hover) {
+  transition-duration: 0.5s;
+}
+
 section #section-1 {
-  display: flex;
   justify-content: start;
   background-color: #fff;
   border: 2px solid #eeeeee;
   border-radius: 1rem;
   margin: 2rem;
   padding: 3rem;
+}
+
+section #section-1 .content .content-nav {
+  margin-top: 1.5rem;
+  font-size: medium;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+section #section-1 .content .content-nav a {
+  width: 100%;
+}
+
+section #section-1 .content .content-nav a button {
+  background-color: aliceblue;
+  border: 0;
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 0 2rem 2rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+section #section-1 .content {
+  display: grid;
+  gap: 2rem;
+}
+
+section #section-1 .content .content-nav a button:hover {
+  background-color: rgb(221, 228, 234);
+  transition-duration: 0.5s;
+}
+
+section #section-1 .content .content-nav a button:not(:hover) {
+  transition-duration: 0.5s;
+}
+
+section #section-1 .content .content-nav a .persegi {
+  border-right: 0;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.kalkulator {
+  justify-content: center;
+  background-color: #ffffff;
+  border: 2px solid #eeeeee;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.kalkulator .card {
+  display: grid;
+  gap: 3rem;
+}
+
+.kalkulator .card .kalkulator-input #numInput {
+  background-color: #eeeeee;
+  border: 2px solid rgb(221, 228, 234);
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.kalkulator .card .kalkulator-input button {
+  background-color: aliceblue;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-size: small;
+  cursor: pointer;
+}
+
+.kalkulator .card .img-rumus {
+  display: flex;
+  justify-content: center;
+}
+
+.kalkulator .card .img-rumus img {
+  width: 50%;
 }
