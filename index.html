@@ -21,7 +21,7 @@
                 </div>
                 <ul class="menu">
                     <li class="item"><a href="#section-1">Hitung Luas</a></li>
-                    <li class="item"><a href="">Hitung Keliling</a></li>
+                    <li class="item"><a href="#section-2">Hitung Keliling</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,8 +36,8 @@
     </Header>
 
     <section>
-        <div id="section-1">
-            <h3>Hitung Luas</h3>
+        <div id="section-1" class="section-1">
+            <h2>Hitung Luas</h2>
             <div class="content">
                 <div class="content-nav">
                     <a href="">
@@ -45,7 +45,6 @@
                             <p>Persegi</p>
                         </button>
                     </a>
-                    <hr>
                     <a href="">
                         <button class="p-panjang">
                             <p>P. Panjang</p>
@@ -53,14 +52,74 @@
                     </a>
                 </div>
                 <div class="kalkulator">
+                    <div class="rumus">
+                        <h3>Rumus luas persegi:</h3>
+                        <p>Misalnya, sebuah persegi memiliki sisi dengan panjang 5 cm. Maka, untuk menghitungnya, L = 5
+                            cm x 5 cm dari rumus L = s x s.</p>
+                    </div>
                     <div class="card">
                         <div class="img-rumus">
-                            <img src="asset/rumus.png" alt="Rumus">
+                            <img src="asset/persegi.png" alt="Rumus">
                         </div>
                         <div class="kalkulator-input">
-                            <label for="numInput">Masukan Sisi</label>
-                            <input type="number" name="numInput" id="numInput">
-                            <button type="submit">Hitung</button>
+                            <div class="input">
+                                <label for="numInput">Masukan Sisi:</label>
+                                <input type="number" name="numInput" id="numInput">
+                                <button type="submit" id="tombol">Hitung</button>
+                            </div>
+                            <div class="result">
+                                <h3>Hasil:</h3>
+                                <p id="hasilLuas">
+                                </p>
+                                <div class="reset">
+                                    <button type="reset">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-2" class="section-1">
+            <h2>Hitung Keliling</h2>
+            <div class="content">
+                <div class="content-nav">
+                    <a href="">
+                        <button class="persegi">
+                            <p>Persegi</p>
+                        </button>
+                    </a>
+                    <a href="">
+                        <button class="p-panjang">
+                            <p>P. Panjang</p>
+                        </button>
+                    </a>
+                </div>
+                <div class="kalkulator">
+                    <div class="rumus">
+                        <h3>Rumus keliling persegi:</h3>
+                        <p>Rumus Keliling Persegi. Untuk mencari keliling bangun datar persegi, rumusnya adalah K = 4 x
+                            s.</p>
+                    </div>
+                    <div class="card">
+                        <div class="img-rumus">
+                            <img src="asset/persegi.png" alt="Rumus">
+                        </div>
+                        <div class="kalkulator-input">
+                            <div class="input">
+                                <label for="numInput">Masukan Sisi:</label>
+                                <input type="number" name="numInput" id="numInput" class="numInputK">
+                                <button id="tombol2" type="submit">Hitung</button>
+                            </div>
+                            <div class="result">
+                                <h3>Hasil:</h3>
+                                <p id="hasilKeliling">
+                                </p>
+                                <div class="reset">
+                                    <button type="reset">Reset</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -68,6 +127,7 @@
         </div>
     </section>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
