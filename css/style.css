@@ -181,7 +181,7 @@ section .section-1 .content .content-nav a .persegi {
   display: flex;
 }
 
-.kalkulator .card .kalkulator-input #numInput {
+.kalkulator .card .kalkulator-input .numInput {
   background-color: #eeeeee;
   border: 2px solid rgb(221, 228, 234);
   padding: 0.5rem;
@@ -217,7 +217,7 @@ section .section-1 .content .content-nav a .persegi {
   border: 2px solid rgb(221, 228, 234);
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 
 .kalkulator .card .img-rumus img {
@@ -226,15 +226,19 @@ section .section-1 .content .content-nav a .persegi {
 
 .kalkulator .card .kalkulator-input .result .reset {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .kalkulator .card .kalkulator-input .reset button {
   font-size: small;
   font-weight: 700;
   background-color: aliceblue;
-  border: 0;
+  border: 2 solid #eeeeee;
   width: 100%;
   border-radius: 10rem;
   cursor: pointer;
+}
+
+.kalkulator .card .kalkulator-input .result p {
+  font-size: 1.2rem;
 }

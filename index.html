@@ -64,12 +64,14 @@
                         <div class="kalkulator-input">
                             <div class="input">
                                 <label for="numInput">Masukan Sisi:</label>
-                                <input type="number" name="numInput" id="numInput">
+                                <input type="number" name="numInput" id="numInput1" class="numInput">
                                 <button type="submit" id="tombol">Hitung</button>
                             </div>
                             <div class="result">
                                 <h3>Hasil:</h3>
-                                <p id="hasilLuas">
+                                <p>
+                                    L = <span id="sisiLuas1">s</span> x <span id="sisiLuas2">s</span> = <span
+                                        id="hasilLuas"></span>
                                 </p>
                                 <div class="reset">
                                     <button type="reset">Reset</button>
@@ -109,12 +111,13 @@
                         <div class="kalkulator-input">
                             <div class="input">
                                 <label for="numInput">Masukan Sisi:</label>
-                                <input type="number" name="numInput" id="numInput" class="numInputK">
+                                <input type="number" name="numInput" id="numInput2" class="numInput">
                                 <button id="tombol2" type="submit">Hitung</button>
                             </div>
                             <div class="result">
                                 <h3>Hasil:</h3>
-                                <p id="hasilKeliling">
+                                <p>
+                                    K = 4 x <span id="sisiKel">s</span> = <span id="hasilKeliling"></span>
                                 </p>
                                 <div class="reset">
                                     <button type="reset">Reset</button>
